@@ -1,0 +1,12 @@
+# my stuff
+*.esproj
+archive
+private
+node_modules
+
+test/node_modules
+
+# osx noise
+.DS_Store
+
+

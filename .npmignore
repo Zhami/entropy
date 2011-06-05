@@ -1,0 +1,9 @@
+# my stuff
+*.esproj
+archive/
+private/
+.gitignore
+
+# osx noise
+.DS_Store
+

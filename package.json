@@ -1,0 +1,23 @@
+{ 
+	"name": "entropy",
+	"description": "Server side engine for Entropy system",
+	"version": "0.0.1",
+	"author": "Stuart Malin <stuart@yellowhelium.com> (http://stuartmalin.com)",
+	"keywords": ["entropy", "framework"],
+  	"main": "./index",
+	"engines": {"node": "0.4.x"},
+	"directories" : { "lib" : "./lib" },
+	"dependencies": {
+	},
+
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/zhami/node-entropy"
+  	},
+  	"licenses" : [ {
+  		"type" : "MIT", 
+  		"url" : "https://github.com/zhami/node-entropy/raw/master/LICENSE"
+    	}
+  	],
+  	"bugs" : { "web" : "https://github.com/zhami/node-entropy/issues" }
+}
