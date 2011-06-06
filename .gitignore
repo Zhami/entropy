@@ -5,6 +5,7 @@ private
 node_modules
 
 test/node_modules
+test/log
 
 # osx noise
 .DS_Store
