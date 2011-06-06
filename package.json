@@ -8,6 +8,8 @@
 	"engines": {"node": "0.4.x"},
 	"directories" : { "lib" : "./lib" },
 	"dependencies": {
+		"eyes": "0.1.6",
+		"now": "0.6.0"
 	},
 
 	"repository" : {
