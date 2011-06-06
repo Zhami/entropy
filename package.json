@@ -24,7 +24,7 @@
 	}
 ],
 "main": "./index",
-"name": "heritable",
+"name": "entropy",
 "repository": {
 	"type": "url",
 	"url": "http://github.com/zhami/entropy"
