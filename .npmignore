@@ -2,6 +2,7 @@
 *.esproj
 archive/
 private/
+test/log/*
 .gitignore
 
 # osx noise
