@@ -1,24 +1,33 @@
 { 
-	"name": "entropy",
-	"description": "Server side engine for Entropy system",
-	"version": "0.0.1",
-	"author": "Stuart Malin <stuart@yellowhelium.com> (http://stuartmalin.com)",
-	"keywords": ["entropy", "framework"],
-  	"main": "./index",
-	"engines": {"node": "0.4.x"},
-	"directories" : { "lib" : "./lib" },
-	"dependencies": {
-		"eyes": "0.1.6",
-		"now": "0.6.0"
-	},
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/zhami/entropy"
-  	},
-  	"licenses" : [ {
-  		"type" : "MIT", 
-  		"url" : "https://github.com/zhami/entropy/raw/master/LICENSE"
-    	}
-  	],
-  	"bugs" : { "web" : "https://github.com/zhami/entropy/issues" }
+"author": {
+	"name": "Stuart Malin", 
+	"email": "stuart@yellowhelium.com",
+	"url": "http://yellowhelium.com/"
+},
+"bugs" : {
+	"url": "http://github.com/zhami/entropy/issues"
+},
+"dependencies": {
+	"eyes": "0.1.6",
+	"now": "0.6.0"
+},
+"description": "Engine for Entropy system",
+"directories" : {
+	"lib" : "./lib"
+},
+"engines": {"node": "0.4"},
+"keywords": ["entropy", "framework"],
+"licenses":[
+	{
+		"type":"MIT",
+		"url":"http://github.com/zhami/entropy/raw/master/LICENSE"
+	}
+],
+"main": "./index",
+"name": "heritable",
+"repository": {
+	"type": "url",
+	"url": "http://github.com/zhami/entropy"
+},
+"version": "0.0.1-1"
 }
