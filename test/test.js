@@ -1,7 +1,7 @@
 var config = require('./config.js'),
 	entropy = require('../index.js'),
 	eyes = require('eyes'),
-    entropyServer;
+    entropyServer, port;
 
 /*    
 process.on('uncaughtException', function (err) {
@@ -12,7 +12,14 @@ process.on('SIGTERM', function () {
 	console.log('Test App: SIGTERM:');
 });
 */
-    
+
+// on Heroku, we must use their assigned port
+port = process.env.PORT;
+if (port) {
+	console.log('Test: found a PORT env, setting port=' + port);
+	config.port = port;
+}
+
 entropyServer = entropy(config);
 
 if (entropyServer) {

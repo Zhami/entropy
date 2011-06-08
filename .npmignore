@@ -1,10 +1,9 @@
-# my stuff
+.DS_Store
+.gitignore
 *.esproj
 archive/
+experiment/
 private/
-test/log/*
-.gitignore
+test/log/
 
-# osx noise
-.DS_Store
 

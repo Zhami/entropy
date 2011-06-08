@@ -23,55 +23,44 @@
 // Declare global variables used (for JSLint)
 /*global */
 
-"use strict";
-
-var support,
+var emitter,
+	nodeEventEmitter = require('events').EventEmitter,
+//	support = require ('../lib/support.js'),
+	sys = require('sys'),
 	// Constructors
-	Support;
+	Emitter;
 
 
 //============================================
-Support = function () {
+Emitter = function () {
 //============================================
-	this.name = 'support';
+
+	nodeEventEmitter.call(this);	// make this a Node EventEmitter
+
+	this.myname = 'Emitter';
+};
+
+// inherit from node's events.EventEmmiter
+sys.inherits(Emitter, nodeEventEmitter);
+
+//--------------------------------------------
+Emitter.prototype.emitEvent = function (eventName) {
+//--------------------------------------------	
+	eventName = eventName || '--event--';
+	this.emit(eventName, this.name());
+};
+
+
+//--------------------------------------------
+Emitter.prototype.name = function () {
+//--------------------------------------------	
+	return this.myname;
+};
+
+
+
+function emitter () {	
+	return new Emitter();	
 }
 
-//--------------------------------------------
-Support.prototype = (function () {
-//--------------------------------------------
-	
-	//------------------------------
-	// static members & helper functions
-	//------------------------------			
-	
-	//!!
-	// apply or call these functions to set "this" !!
-		
-	
-	//------------------------------
-	// public methods
-	//------------------------------
-	return {
-		
-		addMethods: function (o, methods) {
-			var method;
-			
-			for (method in methods) {
-				if (methods.hasOwnProperty(method)) {
-					o[method] = methods[method];
-				}
-			}
-		},
-			
-		 //use closure to capture the caller's "self" (they should call with "this")
-		getGetSelf: function (self) {
-			return function () {
-				return self;
-			};
-		}
-	};
-}());
-
-module.exports = new Support;
-
-
+module.exports = emitter;

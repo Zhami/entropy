@@ -1,13 +1,8 @@
-# my stuff
+.DS_Store
 *.esproj
 archive
 private
 node_modules
-
 test/node_modules
 test/log
-
-# osx noise
-.DS_Store
-
 

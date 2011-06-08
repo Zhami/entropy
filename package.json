@@ -8,8 +8,9 @@
 	"url": "http://github.com/zhami/entropy/issues"
 },
 "dependencies": {
+	"connect": "1.4.3",
 	"eyes": "0.1.6",
-	"now": "0.6.0"
+	"hashish": "0.0.2"
 },
 "description": "Engine for Entropy system",
 "directories" : {
@@ -29,5 +30,5 @@
 	"type": "url",
 	"url": "http://github.com/zhami/entropy"
 },
-"version": "0.0.1-1"
+"version": "0.0.2-1"
 }
