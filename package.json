@@ -8,16 +8,19 @@
 	"url": "http://github.com/zhami/entropy/issues"
 },
 "dependencies": {
-	"connect": "1.4.3",
+	"browserify": "1.x",
+	"connect": "1.4.x",
 	"eyes": "0.1.6",
-	"hashish": "0.0.2"
+	"hashish": "0.0.2",
+	"jquery-browserify": "1.6.1",
+	"jsmin": "1.0.0"
 },
-"description": "Engine for Entropy system",
+"description": "Entropy Web App system",
 "directories" : {
 	"lib" : "./lib"
 },
 "engines": {"node": "0.4"},
-"keywords": ["entropy", "framework"],
+"keywords": ["entropy", "web framework"],
 "licenses":[
 	{
 		"type":"MIT",
@@ -30,5 +33,5 @@
 	"type": "url",
 	"url": "http://github.com/zhami/entropy"
 },
-"version": "0.0.2-1"
+"version": "0.0.3-1"
 }
