@@ -10,8 +10,8 @@
 "dependencies": {
 	"browserify": "1.x",
 	"connect": "1.4.x",
+	"dnode": "0.7.2",
 	"eyes": "0.1.6",
-	"hashish": "0.0.2",
 	"jquery-browserify": "1.6.1",
 	"jsmin": "1.0.0"
 },
