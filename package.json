@@ -8,7 +8,7 @@
 	"url": "http://github.com/zhami/entropy/issues"
 },
 "dependencies": {
-	"browserify": "1.x",
+	"browserify": "0.5.2",
 	"connect": "1.4.x",
 	"dnode": "0.7.2",
 	"eyes": "0.1.6",
@@ -34,5 +34,5 @@
 	"type": "url",
 	"url": "http://github.com/zhami/entropy"
 },
-"version": "0.0.3-5"
+"version": "0.0.3-6"
 }
